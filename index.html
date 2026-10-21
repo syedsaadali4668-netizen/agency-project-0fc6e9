@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonicAI - AI-Powered Podcast Editing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+    <style>
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1A1A2E;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #A700FF, #00E0FF);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #00E0FF, #A700FF);
+        }
+    </style>
+</head>
+<body class="font-sans bg-background text-white antialiased">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden p-4 md:p-8">
+        <!-- Background Gradients/Blobs -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-neon_purple rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob [animation-delay:-2s]"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-neon_cyan rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob [animation-delay:-4s]"></div>
+        <div class="absolute top-1/4 right-1/4 w-72 h-72 bg-neon_purple rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob [animation-delay:-6s]"></div>
+        <div class="absolute bottom-1/4 left-1/4 w-72 h-72 bg-neon_cyan rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob [animation-delay:-8s]"></div>
+
+
+        <div class="relative z-10 p-6 md:p-12 rounded-3xl backdrop-blur-xl bg-white/5 border border-neon_purple/30 shadow-neon-glow max-w-5xl text-center mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-neon_purple to-neon_cyan">
+                Unleash Your Podcast's Potential with SonicAI
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Revolutionize your audio editing workflow. SonicAI uses advanced AI to effortlessly remove filler words, enhance sound quality, and generate show notes, so you can focus on creating.
+            </p>
+            <a href="#get-started" class="inline-block px-10 py-4 rounded-full text-lg font-bold text-white bg-gradient-to-r from-neon_purple to-neon_cyan hover:from-neon_cyan hover:to-neon_purple transition-all duration-300 shadow-lg shadow-neon-purple/50 hover:shadow-neon-cyan/50 transform hover:-translate-y-1">
+                Start Free Trial
+            </a>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="how-it-works" class="py-20 px-4 md:px-8 bg-background relative">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-neon_cyan to-neon_purple">
+                How SonicAI Transforms Your Audio
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature Card 1 -->
+                <div class="p-8 rounded-2xl backdrop-blur-lg bg-white/5 border border-neon_cyan/30 shadow-lg shadow-neon-cyan/20 text-center transition-all duration-300 hover:scale-105 hover:border-neon_purple/50 hover:shadow-neon-purple/30">
+                    <div class="text-5xl font-extrabold text-neon_purple mb-4">1</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Intelligent Filler Word Removal</h3>
+                    <p class="text-gray-300">Our AI identifies and seamlessly removes "ums," "ahs," and other distractions, making your podcast sound polished and professional.</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="p-8 rounded-2xl backdrop-blur-lg bg-white/5 border border-neon_purple/30 shadow-lg shadow-neon-purple/20 text-center transition-all duration-300 hover:scale-105 hover:border-neon_cyan/50 hover:shadow-neon-cyan/30">
+                    <div class="text-5xl font-extrabold text-neon_cyan mb-4">2</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Crystal-Clear Audio Enhancement</h3>
+                    <p class="text-gray-300">Automatically reduce background noise, normalize volume, and optimize speech clarity for an immersive listening experience.</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="p-8 rounded-2xl backdrop-blur-lg bg-white/5 border border-neon_cyan/30 shadow-lg shadow-neon-cyan/20 text-center transition-all duration-300 hover:scale-105 hover:border-neon_purple/50 hover:shadow-neon-purple/30">
+                    <div class="text-5xl font-extrabold text-neon_purple mb-4">3</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Automated Show Notes & Transcripts</h3>
+                    <p class="text-gray-300">Save hours with AI-generated summaries, timestamps, and full transcripts, making your content more accessible and discoverable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-10 px-4 md:px-8 bg-gray-900 text-center text-gray-400">
+        <div class="max-w-7xl mx-auto">
+            <p>&copy; 2023 SonicAI. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-neon_purple transition-colors duration-200">Privacy Policy</a>
+                <a href="#" class="hover:text-neon_cyan transition-colors duration-200">Terms of Service</a>
+                <a href="#" class="hover:text-neon_purple transition-colors duration-200">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
